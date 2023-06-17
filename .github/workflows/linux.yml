@@ -24,3 +24,7 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
+    - name: Create artifact
+      uses: actions/upload-artifact@v3.1.2
+      path: D:\
+      
