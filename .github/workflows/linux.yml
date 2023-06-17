@@ -27,5 +27,5 @@ jobs:
     - name: Create artifact
       uses: actions/upload-artifact@v3.1.2
       with:
-        path: ./bin/debug/net7.0
+        path: ./bin/Debug/net7.0
       
