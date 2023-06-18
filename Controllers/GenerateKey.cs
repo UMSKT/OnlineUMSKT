@@ -32,7 +32,7 @@ namespace OnlineUMSKT.Controllers
             string paddedNumber = channelId.ToString("D3");
             
             Process umsktProcess = new Process();
-            umsktProcess.StartInfo.FileName = "xpkey.exe";
+            umsktProcess.StartInfo.FileName = "xpkey";
             umsktProcess.StartInfo.Arguments = $"-b {bink} -c {paddedNumber} -n {amount} -f {Path.GetFullPath("keys.json")}";
             umsktProcess.StartInfo.RedirectStandardOutput = true;
             umsktProcess.Start();
@@ -68,7 +68,7 @@ namespace OnlineUMSKT.Controllers
             }
 
             Process umsktProcess = new Process();
-            umsktProcess.StartInfo.FileName = "xpkey.exe";
+            umsktProcess.StartInfo.FileName = "xpkey";
             umsktProcess.StartInfo.Arguments = $"-i {iid} -f {Path.GetFullPath("keys.json")}";
             umsktProcess.StartInfo.RedirectStandardOutput = true;
             umsktProcess.Start();
